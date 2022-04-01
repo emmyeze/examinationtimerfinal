@@ -1,0 +1,49 @@
+// :host{
+//   width:100%;
+// }
+// .widget-container {
+//   width: 100%;
+//   height: 400px;
+// }
+
+:host {
+  display: flex;
+   flex-direction: column;
+   height: 100%;
+
+
+}
+
+.aSpacing {
+  padding-bottom: 10px;
+}
+
+
+
+
+
+
+.mat-cards {
+    height: 100px;
+    margin: 2px;
+}
+
+// mat-card a {
+//   text-decoration: none;
+//   display: inline-block;
+//   color: black;
+//   object-position: bottom;
+
+// }
+
+/* .mat-grid-tile {
+    background-color: aquamarine;
+} */
+
+.dialogspacing {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  height: 200px;
+  margin: 2px;
+  min-width: 700px;
+}

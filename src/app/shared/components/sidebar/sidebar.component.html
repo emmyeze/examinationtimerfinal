@@ -1,0 +1,130 @@
+<mat-nav-list>
+  <div class="profile-card">
+    <div class="header">
+      <h2>TOPFAITH UNI TIMER</h2>
+      <!-- <h4>Mkpatak, AkwaIbom</h4> -->
+    </div>
+    <img src="https://www.dropbox.com/s/ll6g9p3s7f3bomb/Logo.png?dl=1" alt="licencee logo">
+  </div>
+  <mat-divider></mat-divider>
+
+  <h2 MatSubHeader>Exam Countdown</h2>
+  <!-- <a mat-list-item routerLinkActive="list-item-active" routerLink="/">
+    <mat-icon>query_stats</mat-icon>Reports</a> -->
+  <!-- <a mat-list-item routerLinkActive="list-item-active" routerLink="/settings">Settings</a>
+
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/login">Login</a> -->
+
+
+</mat-nav-list>
+
+<form   #guestForm="ngForm" >
+
+  <div fxLayout="column" >
+
+    <div class="form input-row" fxLayout="row" fxLayout.lt-md="column"
+    fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+    <mat-form-field fxFlex>
+      <input matInput type="text" placeholder="HOURS"
+      [(ngModel)]=  "hour"
+      name = "hours" >
+    </mat-form-field>
+
+    <div>
+      <button mat-icon-button class="typicalbutton"
+      (click)="increase(1)">
+        <mat-icon color="primary">add</mat-icon></button>
+      <button  mat-icon-button class="typicalbutton"
+      (click)="decrease(1)">
+        <mat-icon color="accent">remove</mat-icon></button>
+    </div>
+
+    </div>
+    <div class="form input-row" fxLayout="row" fxLayout.lt-md="column"
+    fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+    <mat-form-field fxFlex>
+      <input matInput type="text" placeholder="MINS"
+      [(ngModel)]=  "min"
+      name = "mins" >
+
+      </mat-form-field>
+
+      <div>
+        <button mat-icon-button class="typicalbutton"
+        (click)="increase(2)">
+          <mat-icon color="primary">add</mat-icon></button>
+        <button  mat-icon-button class="typicalbutton"
+        (click)="decrease(2)">
+          <mat-icon color="accent">remove</mat-icon></button>
+      </div>
+
+    </div>
+
+    <div class="form input-row" fxLayout="row" fxLayout.lt-md="column"
+    fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+    <mat-form-field fxFlex>
+      <input matInput type="text" placeholder="SECONDS"
+      [(ngModel)]=  "sec"
+      name = "secs" >
+
+      </mat-form-field>
+
+      <div>
+        <button mat-icon-button class="typicalbutton"
+        (click)="increase(3)">
+          <mat-icon color="primary">add</mat-icon></button>
+        <button  mat-icon-button class="typicalbutton"
+        (click)="decrease(3)">
+          <mat-icon color="accent">remove</mat-icon></button>
+      </div>
+
+    </div>
+
+    <div class="form input-row" fxLayout="row" fxLayout.lt-md="column"
+    fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+    <mat-form-field fxFlex>
+      <input matInput type="text" placeholder="EXAM TITLE"
+      [(ngModel)]=  "course"
+      name = "examTitle" >
+
+      </mat-form-field>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+          <div  fxLayout="column" >
+            <!-- <button fxFlex mat-raised-button [disabled]="!guestForm.form.valid"
+            (click)= "addTimer()" >SAVE</button> -->
+
+            <button fxFlex="noshrink"  mat-button class="typicalbutton"  (click)= "addTimer()"
+            [disabled]="!guestForm.form.valid">
+              <mat-icon color="primary">save</mat-icon>save
+            </button>
+
+            <!-- <button fxFlex mat-raised-button (click)= "clear()" >CLEAR</button> -->
+            <button  fxFlex="noshrink" mat-button class="typicalbutton"  (click)= "clear()">
+              <mat-icon color="warn">delete</mat-icon>delete
+            </button>
+            <!-- <button fxFlex mat-raised-button (click)= "reset()" >RESET</button> -->
+
+            <button fxFlex="noshrink" mat-button class="typicalbutton"  (click)= "reset()">
+              <mat-icon color="primary">restart_alt</mat-icon>reset
+            </button>
+          </div>
+
+    </div>
+  </form>
+
+
+
+
+
