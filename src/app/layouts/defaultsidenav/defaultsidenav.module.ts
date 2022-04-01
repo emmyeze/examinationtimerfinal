@@ -10,7 +10,6 @@ import { DefaultsidenavComponent } from './defaultsidenav.component';
 import { HomeComponent } from 'src/app/topview/home/home.component';
 
 import { MatDividerModule } from '@angular/material/divider';
-import { DashboardComponent } from 'src/app/topview/dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
 import {MatCardModule} from '@angular/material/card';
@@ -19,7 +18,6 @@ import {MatCardModule} from '@angular/material/card';
   declarations: [
     DefaultsidenavComponent,
     HomeComponent,
-    DashboardComponent,
 
   ],
   imports: [

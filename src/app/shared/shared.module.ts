@@ -7,7 +7,6 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule } from '@angular/router';
 
-import { AppDisableDirective } from './directives/app-disable.directive';
 import { MaterialModule } from '../material/material.module';
 import { TimercontrolsComponent } from './timercontrols/timercontrols.component';
 
@@ -20,7 +19,6 @@ import { TimercontrolsComponent } from './timercontrols/timercontrols.component'
     HeaderComponent,
     SidebarComponent,
     TimercontrolsComponent,
-    AppDisableDirective,
   ],
   imports: [
     CommonModule,
@@ -38,7 +36,6 @@ import { TimercontrolsComponent } from './timercontrols/timercontrols.component'
     HeaderComponent,
     SidebarComponent,
     TimercontrolsComponent,
-    AppDisableDirective,
   ]
 })
 export class SharedModule { }
